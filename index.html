@@ -20,12 +20,21 @@
   </head>
   <body>
     <header>Welcome to the Rap Lyrics Generator</header>
-    <div id="rap-generator-container" class="rap-generator-container">
-      <button id="rap-lyrics-button" class="btn-primary">
-        Generate rap lyrics
-      </button>
-      <div id="lyrics" class="lyrics">Generating rap lyrics for you...</div>
-    </div>
+    <main>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter the topic of your rap"
+          autofocus
+          required
+          autocomplete="off"
+        /><input type="submit" />
+      </form>
+      
+        <div id="lyrics" class="lyrics">Generating your rap lyrics ...</div>
+      </div>
+    </main>
+
     <footer>
       This project was coded by
       <a href="https://github.com/Jessbpl" target="_blank">Jessica Bravo</a> and
