@@ -19,22 +19,25 @@
     <title></title>
   </head>
   <body>
-    <header>Welcome to the Rap Lyrics Generator</header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your rap"
-          autofocus
-          required
-          autocomplete="off"
-        /><input type="submit" />
-      </form>
-      
-        <div id="lyrics" class="lyrics">Generating your rap lyrics ...</div>
-      </div>
-    </main>
+    <div class="container">
+      <header>Welcome to the Rap Lyrics Generator</header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of your rap"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          /><input type="submit" class="submit-button" />
+        </form>
 
+        <div id="lyrics" class="lyrics">
+          Generating your lyrics. Please wait ...
+        </div>
+      </main>
+    </div>
     <footer>
       This project was coded by
       <a href="https://github.com/Jessbpl" target="_blank">Jessica Bravo</a> and
@@ -42,7 +45,7 @@
       <a
         href="https://github.com/Jessbpl/AI-rap-lyrics-generator-Project"
         target="_blank"
-        >open-sourced on</a
+        >open-sourced on Github</a
       >
       and is
       <a href="https://ai-rap-lyrics-generator.netlify.app/" target="_blank"

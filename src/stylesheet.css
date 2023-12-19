@@ -1,31 +1,75 @@
 body {
-  background-color: rgb(238, 189, 230);
+  background-color: rgb(237, 194, 230);
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  background-color: rgba(238, 189, 230, 0.396);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  max-width: 600px;
+  padding: 0;
 }
 header {
-  font-family: "Oswald", sans-serif;
   background-color: rgb(215, 82, 195);
+  border-radius: 6px;
   color: #fff;
+  display: block;
   font-size: 37px;
   margin: 0 auto;
   padding: 10px;
-  display: block;
   text-align: center;
 }
-.btn-primary {
-  display: block;
-  margin: 30px auto;
-  border-radius: 10px;
-  padding: 10px;
-  background: rgb(215, 82, 195);
+
+form {
   border-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  margin: 30px auto;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.instructions {
+  border: 2px solid #ea97ec;
+  border-radius: 15px;
+  color: #ea97ec;
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: 20px;
+  width: 80%;
+  padding: 15px;
+}
+.submit-button {
+  background-color: #ea97ec;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 15px;
 }
 .lyrics {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #ea97ec;
   display: block;
-  text-align: center;
+  line-height: 2;
   margin: 30px;
+  padding: 20px;
+  text-align: center;
 }
 footer {
   display: block;
-  text-align: center;
+  font-weight: 100;
   margin: 20px auto;
+  text-align: center;
+}
+a {
+  color: rgb(215, 82, 195);
+  font-weight: 400;
+}
+a:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 2ms ease-in-out;
 }
