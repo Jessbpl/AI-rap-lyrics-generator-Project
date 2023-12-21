@@ -50,9 +50,16 @@ form {
   padding: 15px;
 }
 .audio-player {
-  max-width: 300px;
+  display: flex;
+  width: 900px;
   margin: 30px;
   overflow: hidden;
+}
+.audio-player small {
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 400px;
 }
 .example {
   color: rgb(72, 71, 71);
@@ -62,7 +69,7 @@ form {
 .lyrics {
   background-color: #fff;
   border-radius: 15px;
-  color: #ff97c4;
+  color: #dc5791;
   line-height: 2;
   margin: 30px;
   padding: 20px;
