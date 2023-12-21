@@ -78,6 +78,7 @@ form {
 .hidden {
   display: none;
 }
+
 footer {
   background-color: #fff2f8;
   border-radius: 20px;
@@ -93,7 +94,7 @@ a {
   font-weight: 400;
 }
 a:hover {
-  color: #fff;
+  color: #393636;
   cursor: pointer;
   text-decoration: none;
   transition: all 2ms ease-in-out;

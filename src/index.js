@@ -22,6 +22,7 @@ function generateLyrics(event) {
   let lyricsElement = document.querySelector("#lyrics");
   lyricsElement.classList.remove("hidden");
   lyricsElement.innerHTML = ` <div class="generating"> Generating your lyrics about ${instructions.value}...</div>`;
+
   console.log("Generating lyrics");
   console.log(`prompt:${prompt}`);
   console.log(`context:${context}`);
