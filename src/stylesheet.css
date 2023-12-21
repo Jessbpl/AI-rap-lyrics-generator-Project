@@ -3,12 +3,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
 }
 .container {
   background-color: rgba(238, 189, 230, 0.267);
   border: 2px solid #fff;
   border-radius: 15px;
-  margin-top: 30px;
+  margin-top: 90px;
   max-width: 600px;
   padding: 0;
 }
@@ -25,9 +28,8 @@ header {
 
 form {
   display: flex;
-  margin: 30px auto;
+  margin: 30px 0 0;
   padding: 10px;
-  margin-bottom: 30px;
 }
 .instructions {
   border: 2px solid #f758a0;
@@ -52,16 +54,22 @@ form {
   margin: 30px;
   overflow: hidden;
 }
-
+.example {
+  color: rgb(72, 71, 71);
+  font-size: 13px;
+  margin: 0 35px;
+}
 .lyrics {
   background-color: #fff;
   border-radius: 15px;
   color: #ff97c4;
-  display: block;
   line-height: 2;
   margin: 30px;
   padding: 20px;
   text-align: center;
+}
+.hidden {
+  display: none;
 }
 footer {
   background-color: #fff2f8;
@@ -82,4 +90,17 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
   transition: all 2ms ease-in-out;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

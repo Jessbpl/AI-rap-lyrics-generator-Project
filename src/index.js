@@ -4,7 +4,7 @@ function displayLyrics(response) {
     strings: response.data.answer,
     autoStart: true,
     cursor: "🎤",
-    delay: 1,
+    delay: 1.5,
   });
 }
 
@@ -15,10 +15,13 @@ function generateLyrics(event) {
 
   let prompt = `User instructions: ${instructions.value}`;
   let context =
-    "You are an AI expert in rap that likes to write fun and short rap lyrics. Please generate 6 line lyrics and don't include SheCodes AI on the lyrics.  Please make sure to use the user instructions. Provide the output in basic HTML and separate EACH line with a <br/>. Sign the lyrics with 'SheCodes AI' inside a <strong> element at the very end of the lyrics";
+    "You are an AI rap expert with a penchant for crafting lively and concise rap verses. Your specialty lies in creating fun and punchy lyrics. Your task is to generate a set of 4 short, engaging lines. Follow the user's instructions closely by presenting the output in basic HTML, with each line separated by a <br/>. Finally, sign off the lyrics with 'SheCodes AI' enclosed within a <strong> element at the conclusion of the composition.";
   let apiKey = "eb214ccaa33987f7248o49846e082tab";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let lyricsElement = document.querySelector("#lyrics");
+  lyricsElement.classList.remove("hidden");
+  lyricsElement.innerHTML = ` <div class="generating"> Generating your lyrics about ${instructions.value}...</div>`;
   console.log("Generating lyrics");
   console.log(`prompt:${prompt}`);
   console.log(`context:${context}`);

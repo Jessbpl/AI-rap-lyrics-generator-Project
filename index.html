@@ -24,23 +24,26 @@
     <div class="container">
       <header>Welcome to the Rap Lyrics Generator</header>
       <main>
-        <form id="generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of your rap"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          /><input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of your rap"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            /><input type="submit" class="submit-button" />
+          </form>
+          <div class="example">i.e: dog, potato, flower</div>
+        </div>
         <div id="audio" class="audio-player">
-          <audio controls autoplay>
+          <audio controls>
             <source src="src/audio/sample.mp3" type="audio/mp3" />
           </audio>
         </div>
-        <div id="lyrics" class="lyrics"></div>
+        <div id="lyrics" class="lyrics hidden"></div>
       </main>
     </div>
     <footer>
