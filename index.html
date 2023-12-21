@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title></title>
   </head>
   <body>
@@ -31,9 +32,14 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           /><input type="submit" class="submit-button" />
         </form>
-
+        <div id="audio" class="audio-player">
+          <audio controls>
+            <source src="src/audio/sample.mp3" type="audio/mp3" />
+          </audio>
+        </div>
         <div id="lyrics" class="lyrics"></div>
       </main>
     </div>

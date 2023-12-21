@@ -1,38 +1,38 @@
 body {
-  background-color: rgb(237, 194, 230);
+  background-image: url("images/pinkcloud.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Oswald", sans-serif;
 }
 .container {
-  background-color: rgba(238, 189, 230, 0.396);
+  background-color: rgba(238, 189, 230, 0.267);
   border: 2px solid #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 30px;
   max-width: 600px;
   padding: 0;
 }
 header {
-  background-color: rgb(215, 82, 195);
-  border-radius: 6px;
+  background-color: #f758a0;
+  border-radius: 15px;
   color: #fff;
   display: block;
   font-size: 37px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 17px;
   text-align: center;
 }
 
 form {
-  border-color: #fff;
-  border-radius: 20px;
   display: flex;
   margin: 30px auto;
   padding: 10px;
   margin-bottom: 30px;
 }
 .instructions {
-  border: 2px solid #ea97ec;
+  border: 2px solid #f758a0;
   border-radius: 15px;
-  color: #ea97ec;
+  color: #ff97c4;
   font-size: 15px;
   line-height: 25px;
   margin-left: 20px;
@@ -40,17 +40,23 @@ form {
   padding: 15px;
 }
 .submit-button {
-  background-color: #ea97ec;
+  background-color: #f758a0;
   border: none;
   border-radius: 15px;
   color: #fff;
   margin-left: 10px;
   padding: 15px;
 }
+.audio-player {
+  max-width: 300px;
+  margin: 30px;
+  overflow: hidden;
+}
+
 .lyrics {
   background-color: #fff;
-  border-radius: 10px;
-  color: #ea97ec;
+  border-radius: 15px;
+  color: #ff97c4;
   display: block;
   line-height: 2;
   margin: 30px;
@@ -58,13 +64,17 @@ form {
   text-align: center;
 }
 footer {
+  background-color: #fff2f8;
+  border-radius: 20px;
   display: block;
   font-weight: 100;
   margin: 20px auto;
+  max-width: 600px;
+  padding: 10px;
   text-align: center;
 }
 a {
-  color: rgb(215, 82, 195);
+  color: #f758a0;
   font-weight: 400;
 }
 a:hover {
